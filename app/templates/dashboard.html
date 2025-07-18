@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Welcome, {{ user.username }}</h2>
+<h4>Total Spent: ${{ total }}</h4>
+<a class="btn btn-primary mb-3" href="/add">Add Expense</a>
+<a class="btn btn-secondary mb-3" href="/logout">Logout</a>
+<table class="table table-bordered">
+    <thead>
+        <tr><th>Amount</th><th>Category</th><th>Date</th><th>Note</th></tr>
+    </thead>
+    <tbody>
+        {% for e in expenses %}
+        <tr>
+            <td>${{ e.amount }}</td>
+            <td>{{ e.category }}</td>
+            <td>{{ e.date }}</td>
+            <td>{{ e.note }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add Expense</h2>
+<form method="POST">
+    <input class="form-control" type="number" name="amount" step="0.01" placeholder="Amount" required><br>
+    <input class="form-control" type="text" name="category" placeholder="Category" required><br>
+    <input class="form-control" type="date" name="date" required><br>
+    <textarea class="form-control" name="note" placeholder="Note (optional)"></textarea><br>
+    <button class="btn btn-success">Add Expense</button>
+</form>
+<a href="/dashboard">Back to Dashboard</a>
+{% endblock %}

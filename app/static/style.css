@@ -1,0 +1,28 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: white;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-right: 5px;
+}
+
+.alert {
+    margin-top: 10px;
+}
